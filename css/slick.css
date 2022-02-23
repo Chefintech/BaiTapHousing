@@ -23,7 +23,7 @@
     position: relative;
 
     display: block;
-    overflow: hidden;
+    overflow: visible;
 
     margin: 0;
     padding: 0;
@@ -71,7 +71,7 @@
 }
 .slick-loading .slick-track
 {
-    visibility: hidden;
+    visibility: visible;
 }
 
 .slick-slide

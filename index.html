@@ -10,15 +10,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Font Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
-<!-- slick slider -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
-<!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
-<!-- OWL CSS
-<link rel="stylesheet" href="/css/owl.carousel.min.css">
-<link rel="stylesheet" href="/css/owl.theme.default.min.css"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- slick slider -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css" />
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- LIGHTBOX CSS -->
+  <link rel="stylesheet" href="/css/lightbox.min.css">
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="/css/index.css">
 </head>
@@ -28,7 +30,7 @@
   <header>
     <div class="header__content">
       <h1>
-        <a class="navbar__brand">
+        <a class="navbar__brand" href="/index.html">
           Hous<span>ing</span>
         </a>
       </h1>
@@ -47,31 +49,37 @@
   <!-- CAROUSEL -->
   <section class="slider">
     <div class="slider__content">
-      <ul class="autoplay">
-        <li> 
+      <div class="autoplay slider-nav">
+        <div>
           <div class="slider__img img1"></div>
           <div class="slider__info">
             <h4>Lorem, ipsum dolor.</h4>
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
-        </li>
-        <li><div class="slider__img img2"></div>
+        </div>
+
+        <div>
+          <div class="slider__img img2"></div>
           <div class="slider__info">
             <h4>Lorem, ipsum dolor.</h4>
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
-        </li>
-        <li><div class="slider__img img3"></div>
+        </div>
+        <div>
+          <div class="slider__img img3"></div>
           <div class="slider__info">
             <h4>Lorem, ipsum dolor.</h4>
             <p>Lorem ipsum dolor sit amet.</p>
-          </div></li>
-        <li><div class="slider__img img4"></div>
+          </div>
+        </div>
+        <div>
+          <div class="slider__img img4"></div>
           <div class="slider__info">
             <h4>Lorem, ipsum dolor.</h4>
             <p>Lorem ipsum dolor sit amet.</p>
-          </div></li>
-      </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- ABOUT -->
@@ -81,7 +89,7 @@
       <div class="about__info">
         <i class="fa fa-home"></i>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eos quas ut, expedita perferendis quasi?
-        </p> 
+        </p>
       </div>
       <div class="about__info">
         <i class="fa fa-key"></i>
@@ -97,7 +105,10 @@
     </div>
     <div class="about__us">
       <h3>About us</h3>
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium hic expedita consequuntur possimus dolor eaque labore ea quis itaque aut, doloribus, facere, molestiae nobis. Minima magni asperiores, numquam nostrum iste aperiam minus dolore incidunt, rerum laborum consectetur natus quidem consequuntur, labore possimus harum unde necessitatibus vitae libero ex saepe voluptatum?</p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium hic expedita consequuntur possimus dolor
+        eaque labore ea quis itaque aut, doloribus, facere, molestiae nobis. Minima magni asperiores, numquam nostrum
+        iste aperiam minus dolore incidunt, rerum laborum consectetur natus quidem consequuntur, labore possimus harum
+        unde necessitatibus vitae libero ex saepe voluptatum?</p>
     </div>
   </section>
   <!-- Stats -->
@@ -123,42 +134,150 @@
     </div>
   </section>
   <!-- Blog -->
+
+
   <section class="blog__content">
     <h2>Blog
     </h2>
     <div class="blog__info">
       <div class="blog__item">
         <img src="/images/g1.jpg" alt="g1">
-        <p>Lorem, ipsum dolor.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni, dolor voluptatem vero exercitationem mollitia?</p>
-        <button class="read__more">Read more..</button>
+        <h5>Lorem, ipsum dolor</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni, dolor voluptatem vero exercitationem
+          mollitia?</p>
+        <button type="button" class="btn btn-primary read__more" data-toggle="modal" data-target="#exampleModal">
+          Read more..
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModal">Housing</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="/images/img2.jpg" alt="close">
+              </div>
+              <div class="modal-footer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint est facere cum quo ducimus dignissimos
+                  repellendus perferendis nesciunt. Fugiat necessitatibus nihil dolorem quasi dolorum quibusdam
+                  reprehenderit pariatur. Eius sapiente illum porro nemo odio, dolorum assumenda saepe cumque amet
+                  dolores, officia recusandae inventore repellat repudiandae iure quam, omnis hic? Dolores blanditiis
+                  autem magni atque fugiat commodi inventore aliquam eos mollitia cum ut suscipit veniam ex nobis maxime
+                  nihil repudiandae, voluptatibus libero id perferendis laborum sapiente expedita! Vitae ex similique
+                  officia recusandae maxime ab pariatur debitis expedita officiis eos quibusdam, nisi consequuntur
+                  voluptatibus unde obcaecati? Asperiores harum tempore ea veritatis. Asperiores, aliquam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="blog__item">
         <img src="/images/g2.jpg" alt="g2">
-        <p>Lorem, ipsum dolor.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni, dolor voluptatem vero exercitationem mollitia?</p>
-        <button class="read__more">Read more..</button>
+        <h5>Lorem, ipsum dolor</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni, dolor voluptatem vero exercitationem
+          mollitia?</p>
+        <button type="button" class="btn btn-primary read__more" data-toggle="modal" data-target="#exampleModal">
+          Read more..
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModal">Housing</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="/images/img2.jpg" alt="close">
+              </div>
+              <div class="modal-footer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint est facere cum quo ducimus dignissimos
+                  repellendus perferendis nesciunt. Fugiat necessitatibus nihil dolorem quasi dolorum quibusdam
+                  reprehenderit pariatur. Eius sapiente illum porro nemo odio, dolorum assumenda saepe cumque amet
+                  dolores, officia recusandae inventore repellat repudiandae iure quam, omnis hic? Dolores blanditiis
+                  autem magni atque fugiat commodi inventore aliquam eos mollitia cum ut suscipit veniam ex nobis maxime
+                  nihil repudiandae, voluptatibus libero id perferendis laborum sapiente expedita! Vitae ex similique
+                  officia recusandae maxime ab pariatur debitis expedita officiis eos quibusdam, nisi consequuntur
+                  voluptatibus unde obcaecati? Asperiores harum tempore ea veritatis. Asperiores, aliquam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </a>
       </div>
       <div class="blog__item">
         <img src="/images/g1.jpg" alt="g1">
-        <p>Lorem, ipsum dolor.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni, dolor voluptatem vero exercitationem mollitia?</p>
-        <button class="read__more">Read more..</button>
+        <h5>Lorem, ipsum dolor</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni, dolor voluptatem vero
+          exercitationem
+          mollitia?</p>
+        <button type="button" class="btn btn-primary read__more" data-toggle="modal" data-target="#exampleModal">
+          Read more..
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModal">Housing</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="/images/img2.jpg" alt="close">
+              </div>
+              <div class="modal-footer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint est facere cum quo ducimus dignissimos
+                  repellendus perferendis nesciunt. Fugiat necessitatibus nihil dolorem quasi dolorum quibusdam
+                  reprehenderit pariatur. Eius sapiente illum porro nemo odio, dolorum assumenda saepe cumque amet
+                  dolores, officia recusandae inventore repellat repudiandae iure quam, omnis hic? Dolores blanditiis
+                  autem magni atque fugiat commodi inventore aliquam eos mollitia cum ut suscipit veniam ex nobis maxime
+                  nihil repudiandae, voluptatibus libero id perferendis laborum sapiente expedita! Vitae ex similique
+                  officia recusandae maxime ab pariatur debitis expedita officiis eos quibusdam, nisi consequuntur
+                  voluptatibus unde obcaecati? Asperiores harum tempore ea veritatis. Asperiores, aliquam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
-    <div class="show">
-      <img src="/images/t1.jpg" alt="">
     </div>
   </section>
   <!-- GETMORE -->
   <section class="getmore__content">
     <div class="getmore__video">
-
+      <div class="popup2" onclick="myFunction()">
+        <i class="fa fa-play-circle"></i>
+        <div class="popupVideo" id="popupVideo">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/gt0TAywN8_Q" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
     </div>
     <div class="getmore__info">
-      <h3>Get More..</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sunt nostrum provident minima quasi aperiam, iusto, omnis laborum esse quod vero doloremque itaque labore soluta. Temporibus sequi adipisci rem corrupti!</p>
-      <button> <a href="#"></a>  Read more..</button>
+      <h2>Get More..</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sunt nostrum provident minima quasi aperiam,
+        iusto, omnis laborum esse quod vero doloremque itaque labore soluta. Temporibus sequi adipisci rem corrupti!</p>
+      <div class="popup" onclick="myFunction()"><button class="read__more" id="popup">Read more..</button>
+        <div class="popuptext" id="myPopup">
+          <div class="popuptext__whole">
+            <div class="popuptext__header">
+              <h2>Housing</h2>
+            </div>
+            <img src="/images/img2.jpg" alt="img2">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, et numquam consequuntur libero
+              eaque minima quia eos inventore dignissimos. Eaque at autem, officia laudantium officiis dolorum
+              tenetur t nemo beatae nobis. Nostrum nihil sapiente quisquam.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- Portfolio -->
@@ -196,11 +315,8 @@
   <!-- Footer -->
   <Footer>
     <div class="footer__copyright">
-
-
     </div>
     <div class="footer__icon"></div>
-
   </Footer>
   <!-- Back to TOp -->
   <!-- Jquery -->
@@ -208,56 +324,28 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <!-- < Jquery Waypoint -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <!-- BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
   <!-- slick -->
   <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
-
   <script>
-    $('.autoplay').slick({
+    $(".autoplay").slick({
+      autoplay: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      dots:true,
-      arrows:true,
+      prevArrow: '<i class="fa fa-arrow-left"></i>',
+      nextArrow: '<i class="fa fa-angle-right right"></i>'
     });
   </script>
   <!-- countup JS -->
   <script src="/js/jquery.countup.js"></script>
   <script>
-      $('.counter').countUp();
+    $('.counter').countUp();
   </script>
-  <!-- pop up -->
-  <script>
-  function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-  }
-  </script>
-  <!-- OWL JS -->
-  <!-- <script src="/js/owl.carousel.min.js"></script> -->
-  <!-- <script>
-      $('.owl-carousel').owlCarousel({
-          loop: true,
-          nav: false,
-          autoplay: true,
-          autoplayTimeout: 5000,
-          responsive: {
-              0: {
-                  items: 1
-              },
-              600: {
-                  items: 1
-              },
-              1000: {
-                  items: 1
-              }
-          }
-      })
-  </script> -->
-
-  <!-- countup JS -->
- 
-
+  <!-- Lightbox -->
+  <script src="/js/lightbox.min.js"></script>
 </body>
 
 </html>
